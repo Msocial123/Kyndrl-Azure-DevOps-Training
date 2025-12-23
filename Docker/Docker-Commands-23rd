@@ -1,0 +1,41 @@
+ 2  docker --version
+    3  docker info
+    4  clear
+    5  service docker start
+    6  service docker status
+    7  service docker stop
+    8  service docker status
+    9  clear
+   10  docker create ubuntu /bin/bash
+   11  docker images
+   12  docker ps -a
+   13  service docker status
+   14  docker images
+   15  docker pull ubuntu:resolute-20251208
+   16  docker images
+   17  docker pull amazonlinux:latest
+   18  docker images
+   19  docker ps -a
+   20  clear
+   21  history
+   22  service docker status
+   23  service docker stop
+   24  service docker status
+   25  docker pull nginx
+   26  service docker status
+   27  clear
+   28  docker ps
+   29  docker ps -a
+   30  docker start 31a37b034ca7
+   31  docker ps
+   32  docker ps -a
+   33  docker create -it --name first-cont ubuntu /bin/bash
+   34  docker ps
+   35  docker ps -a
+   36  docker start 6fec28b88ebd
+   37  docker ps
+   38  docker exec -it first-cont /bin/bash
+   39  docker ps
+   40  docker ps
+   41  history
+   42  docker exec -it first-cont /bin/bash
