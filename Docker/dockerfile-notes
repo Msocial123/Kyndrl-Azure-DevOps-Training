@@ -1,0 +1,114 @@
+Dockerfile
+
+
+FROM amaon-linux:latest
+
+FROM ubuntu:latest
+
+
+FROM node:24-alpine
+
+FROM node:latest
+
+FROM python:3.11-alpine
+
+FROM openjdk:27-ea-trixie
+
+=============================================================================
+
+WORKDIR:- 
+
+WORKDIR /app  /web  /sample /flipkart
+
+============================================================================
+
+COPY <src code loct>  <dest location>
+
+COPY .  /app
+
+COPY . .
+
+COPY package.josn  .
+
+COPY requirements.txt  .
+
+COPY . .  Or . /app  or . /sample
+
+==========================================================================
+
+MAINTAINER:- it is used to specify dockerfile author or owner
+
+
+MAINTAINER muraliclahan526@gmail.com
+
+MAINTAINER MuraliMohan
+
+==========================================================================
+
+
+	Ø Build time commands:- always should be execute while building a docker image
+	Ø Run time commands:- always commands should be execute while creating the containers
+
+===========================================================================
+RUN:- it will execute commands while building docker image and it will create layers
+
+RUN apt update -y
+
+RUN yum install httpd -y
+
+RUN apt install apache2 -y
+
+RUN apt install nginx -y
+
+RUN npm install
+
+============================================================================
+
+EXPOSE :- it will expose app port number 
+
+EXPOSE 80
+
+EXPOSE 5000
+
+EXPOSE 3000
+
+EXPOSE 9000
+
+============================================================================
+
+ADD :- it will handle URL'S 
+
+ADD  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.113/bin/apache-tomcat-9.0.113.tar.gz   ./  or /app or /sample
+
+ADD app.jar   /opt/app/app.jar
+
+=================================================================================================
+
+CMD:-  it will execute commands while running a container form an image
+
+Node sta
+
+Pip app.py
+
+CMD ["node", "start"]
+
+CMD ["node", "app.js"]
+
+CMD ["node", "server.js"]
+
+
+====================================================================
+
+ENTRYPOINT:- It will execute a specify command while running container form an image.
+
+ENTRYPOINT   ["node",  "app.js"]
+
+Node start
+
+=====================================================================
+
+ENV MY_NAME="John Doe"
+
+
+
+
