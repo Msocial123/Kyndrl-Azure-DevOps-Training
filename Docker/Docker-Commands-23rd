@@ -39,3 +39,67 @@
    40  docker ps
    41  history
    42  docker exec -it first-cont /bin/bash
+      96  mkdir flipkart-app
+   97  ls
+   98  cd flipkart-app/
+   99  ls
+  100  touch Dockerfile
+  101  ls
+  102  vi index.html
+  103  ls
+  104  cat index.html
+  105  ls
+  106  pwd
+  107  ls
+  108  apt update -y
+  109  ls
+  110  vi Dockerfile
+  111  ls
+  112  cat Dockerfile
+  113  docker build -t login-app:v1.0.0 .
+  114  vi Dockerfile
+  115  docker build -t login-app:v1.0.0 .
+  116  docker images
+  117  dh -h
+  118  pwd
+  119  ls -la
+  120  cd ..
+  121  docker images
+  122  ls
+  123  cd flipkart-app/
+  124  ls
+  125  pwd
+  126  cat Dockerfile
+  127  cd ..
+  128  ls
+  129  docker images
+  130  cd /var/lib
+  131  ls
+  132  cd docker
+  133  ls
+  134  cd containers
+  135  ls
+  136  cd ../...
+  137  cd ../..
+  138  ls
+  139  cd ...
+  140  ls
+  141  cd ..
+  142  exit
+  143  docker info
+  144  ls
+  145  cd flipkart-app/
+  146  ls
+  147  docker run -d --name login-app -p 80:80 login-app:v1.0.0
+  148  docker ps
+  149  ls
+  150  > index.html
+  151  vi index.html
+  152  cat index.html
+  153  las
+  154  ls
+  155  docker build -t socila-login-app:v1.0.0 .
+  156  docker images
+  157  docker run -d --name social-login-app -p 81:80 socila-login-app:v1.0.0
+  158  docker ps
+
