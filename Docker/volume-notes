@@ -1,0 +1,47 @@
+Volumes in  docker
+
+10 October 2025
+21:10
+
+	Q. Container got crashed or down or deleted, so wt will happen to ur app?
+
+	Ø App will not work means users unable to access the app
+	Ø The data will be lost: - files , folders, any imp info
+
+
+Why volume ?
+============
+
+	Ø To persisting the data
+	Ø To back up the data
+
+
+Wt is volume?
+============
+
+	Ø Volume is  nothing but it’s a directory 
+	Ø You are going to declaring a directory as a volume
+	Ø You can share one volume with no.of containers
+	Ø You have to create or define a volume along with container.
+	Ø Once container got created its difficult to attach a volume to the container
+	Ø If any container got deleted still your volume will be there .
+	Ø Volume will not be included along with ur image 
+	Ø Volume is going to creating out of the file system.
+
+
+Types of volumes 
+==============
+
+	Ø Docker has 3 type of volumes
+
+	1. Anonymous volume:- it means you are not going to assign a meaningful name , using id 
+	2. Named volume :- we can assign a name to the volume
+	3. Bind volume:-
+
+How to share one volume with one container to another container
+=======================================================
+
+docker run -it --name d2  --privileged --volumes-from d1 ubuntu /bin/bash
+
+ --privileged: -it is nothing but you are going to giving authorization to d2 to access the volume
+--volumes-from:- d1
