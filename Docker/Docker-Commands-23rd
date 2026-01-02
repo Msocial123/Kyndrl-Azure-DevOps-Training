@@ -102,4 +102,65 @@
   156  docker images
   157  docker run -d --name social-login-app -p 81:80 socila-login-app:v1.0.0
   158  docker ps
+    155  docker build -t socila-login-app:v1.0.0 .
+  156  docker images
+  157  docker run -d --name social-login-app -p 81:80 socila-login-app:v1.0.0
+  158  docker ps
+  159  histroy
+  160  history
+  161  ls
+  162  cd flipkart-app/
+  163  ls
+  164  docker ps
+  165  docker exec -it social-login-app bash
+  166  docker pause social-login-app
+  167  docker ps
+  168  docker unpause social-login-app
+  169  docker ps
+  170  docker stop social-login-app
+  171  docker ps
+  172  docker ps -a
+  173  docker restart social-login-app
+  174  docker ps
+  175  docker ps -a
+  176  docker rm webserver
+  177  docker ps
+  178  docker ps -a
+  179  docker rm $(docker ps -aq)
+  180  docker ps -a
+  181  docker rm social-login-app
+  182  docker rm -f social-login-app
+  183  docker ps -a
+  184  docker images
+  185  docker rmi amazonlinux:latest
+  186  docker images
+  187  docker pull saiteja2502/userprofileretail:latest
+  188  docker images
+  189  docker rmi $(docker images -q)
+  190  docker images
+  191  docker rmi -f $(docker images -q)
+  192  docker images
+  193  docker run -d --name ipl -p 3000:3000 muralisocial123/ipl:latest
+  194  docker ps
+  195  docker inspect ipl
+  196  docker ps
+  197  curl 172.17.0.2:3000
+Docker create
+Docker start
+Docker run
+Docker ps
+Docker ps -a
+Docker logs
+Docker exec -it 
+Docker pause :- 
+Docker unpuse
+Docker stop:-
+Docker restart
+Docker rm 
+Docker rm -f 
+Docker rm $(docker ps -aq)
+Docker rmi 
+Docker rmi $(docker images -q)
+Docker inspect
+curl
 

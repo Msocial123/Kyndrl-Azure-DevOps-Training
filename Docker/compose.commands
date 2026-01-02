@@ -1,0 +1,37 @@
+  208  docker build -t transaction-history:v1.0.0 .
+  209  docker images
+  210  docker run -d --name transaction-app -p 3000:3000 transaction-history:v1.0.0
+  211  docker ps
+  212  docker inspect transaction-app
+  213  curl 172.17.0.2:3000
+  214  docker ps
+  215  docker logs transaction-app
+  216  docker ps
+  217  docker --version
+  218  docker-compose version
+  219  curl -SL https://github.com/docker/compose/releases/download/v5.0.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+  220  chmod +x /usr/local/bin/docker-compose
+  221  docker-compose version
+  222  ls
+  223  > docker-compose.yml
+  224  cat docker-compose.yml
+  225  ls
+  226  vi docker-compose.yml
+  227  ls
+  228  docker ps
+  229  docker rm -f transaction-app
+  230  docker ps -a
+  231  docker rm ipl
+  232  ls
+  233  docker images
+  234  cat docker-compose.yml
+  235  docker network ls
+  236  ls
+  237  docker-compose up -d
+  238  docker images
+  239  docker ps
+  240  docker exec -it transaction-app bash
+  241  ls
+  242  docker exec -it mongodb mongosh
+  243  ls
+  244  history

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:     
+  transaction-app:
+    build: . 
+    image: transaction-app:v2.0.0
+    container_name: transaction-app
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/transactionhistory
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
+
