@@ -1,0 +1,55 @@
+  246  docker ps
+  247  docker netwokr ls
+  248  docker network ls
+  249  docker-compose down
+  250  docker ps -a
+  251  docker network ls
+  252  docker-compose up -d
+  253  docker ps
+  254  docker network ls
+  255  docker-compose down
+  256  ls
+  257  docker run -it --name c1 -v /murali ubuntu /bin/bash
+  258  docker ps -a
+  259  docker volume ls
+  260  docker inspect c69e5fad540ce37574f09320371e198cd0d92b6a5d7b45ace8ac19eb77ef68ea
+  261  docker inspect bce61325d23c7392c48c88a2400e690cd3dbfa6bda3a9ea226daa7882e26a63b
+  262  docker inspect b28a60a7aed811c075176ccaadae8a4926f0bd6f9b5b9fe2056baa2fd5030e65
+  263  cd /var/lib/docker/volumes/
+  264  ls
+  265  cd b28a60a7aed811c075176ccaadae8a4926f0bd6f9b5b9fe2056baa2fd5030e65
+  266  ls
+  267  cd _data/
+  268  ls
+  269  cd 75a9470b10ffa01a5ea87c98c2b0f379507e43880325b5b3cf4eb0b3b75c73fb
+  270  ls
+  271  cd ..
+  272  ls
+  273  cd ..
+  274  ls
+  275  cd 4137067207a8c8ad5c8630a3707080939a078f04000bb457c6a9566071b81419
+  276  ls
+  277  cd _data/
+  278  ls
+  279  cd ../..
+  280  cd 93f719ff38e516ed13502c32259040a2ccf09f69fa03c993e8a48f4afe2a1db3
+  281  ls
+  282  cd _data/
+  283  ls
+  284  cd ../..
+  285  cd bce61325d23c7392c48c88a2400e690cd3dbfa6bda3a9ea226daa7882e26a63b
+  286  cd _data/
+  287  ls
+  288  cd ../..
+  289  cd 49cee4100fb681f8186689df9051e6868afcee5a46e3a521d904582522e08cff
+  290  ls
+  291  cd _data/
+  292  ls
+  293  cd ../..
+  294  cd 9a0ba4d16411cee6dd6296d203fed399be13b98d1420024de73f8c09c21f23bd
+  295  cd _data/
+  296  ls
+  297  cd isro/
+  298  ls
+  299  exit
+  300  history
