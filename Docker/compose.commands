@@ -35,3 +35,13 @@
   242  docker exec -it mongodb mongosh
   243  ls
   244  history
+
+  # mongodb connection commands
+
+  docker exec -it mongodb mongosh
+ 
+show dbs
+ 
+use transactionhistory
+ 
+db.transactions.find().pretty()
