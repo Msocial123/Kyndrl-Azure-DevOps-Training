@@ -53,3 +53,91 @@
   298  ls
   299  exit
   300  history
+  302  docker ps- a
+  303  docker ps -a
+  304  docker run -it --name c2 -v mohan:/murali ubuntu /bin/bash
+  305  docker ps -a
+  306  docker volume ls
+  307  docker inspect mohan
+  308  cd /var/lib/docker/volumes/
+  309  ls
+  310  cd mohan/
+  311  ls
+  312  cd _data/
+  313  ls
+  314  cd ipl
+  315  ls
+  316  exit
+  317  docker ps -a
+  318  docker rm c2
+  319  docker ps -a
+  320  docker volume ls
+  321  cd /var/lib/docker/volumes
+  322  ls
+  323  cd mohan/
+  324  ls
+  325  cd _data/
+  326  ls
+  327  exit
+  328  cd /opt/
+  329  ls
+  330  pwd
+  331  mkdir meesho
+  332  ls
+  333  cd meesho/
+  334  ls
+  335  pwd
+  336  exit
+  337  docker run -it --name c3 -v  /opt/meesho:/e-commerce-app ubuntu /bin/bash
+  338  ls
+  339  docker volume ls
+  340  docker ps -a
+  341  cd /opt/
+  342  ls
+  343  cd meesho/
+  344  ls
+  345  exit
+  346  docker ps -a
+  347  docker rm c3
+  348  ls
+  349  docker ps -a
+  350  cd /opt/meesho/
+  351  ls
+  352  exit
+  353  docker run -it --name d1 -v amazon:/aws-app ubuntu /bin/bash
+  354  ls
+  355  docker ps
+  356  docker ps -a
+  357  docker volume ls
+  358  docker inpsect amazon
+  359  docker inspect amazon
+  360  cd /var/lib/docker/volumes
+  361  ls
+  362  cd amazon/_data/
+  363  ls
+  364  exit
+  365  docker run -it --name d2 --privileged --volumes-from d1 ubunut /bin/bash
+  366  docker run -it --name d2 --privileged --volumes-from d1 ubuntu /bin/bash
+  367  docker volume ls
+  368  cd /var/lib/docker/volumes/
+  369  ls
+  370  cd amazon/
+  371  ls
+  372  cd _data/
+  373  ls
+  374  exit
+  375  docker ps
+  376  docker ps -a
+  377  docker rm d2
+  378  docker rm d1
+  379  docker ps -a
+  380  cd /var/lib/docker/volumes/
+  381  ls
+  382  cd amazon/
+  383  ls
+  384  cd _data/
+  385  ls
+  386  docker run -it --name d3 -v /opt/meesho:/business-app ubuntu /bin/bash
+  387  exit
+  388  docker ps -a
+  389  docker volume ls
