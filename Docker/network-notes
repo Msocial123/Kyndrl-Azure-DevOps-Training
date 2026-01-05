@@ -1,0 +1,11 @@
+Docker network
+==============
+
+Why network
+===========
+
+	Ø To communication 
+
+	1. Bridge:- it is for prod use , containers will get ip add 
+	2. Host:- no container will get ip add and it will use host-network, it is  for test
+	3. None:- no communicate between the containers, 

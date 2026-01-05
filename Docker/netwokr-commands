@@ -1,0 +1,14 @@
+  391  docker network ls
+  392  docker network create murali-bridge
+  393  docker network ls
+  394  docker run -d --name web1 --network murali-bridge nginx
+  395  docker ps
+  396  docker inspect murali-bridge
+  397  docker run -d --name web2 --network murali-bridge nginx
+  398  docker ps
+  399  docker exec -it web2 bash
+  400  docker ps
+  401  docker exec -it web2 bash
+  402  docker network create mohan-network --subnet=10.0.0.0/18 --gateway=10.0.63.101
+  403  docker network ls
+  404  docker inspect mohan-network
