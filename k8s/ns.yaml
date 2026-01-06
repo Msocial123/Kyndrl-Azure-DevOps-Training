@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Namespace 
+metadata:
+  name: amazon-ns
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: meesho-ns
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ajio-ns

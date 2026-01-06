@@ -1,0 +1,44 @@
+    5  vi ns.yaml
+    6  ls
+    7  cat ns.yaml 
+    8  kubectl create ns flipkart-ns
+    9  ls
+   10  kubectl apply -f ns.yaml 
+   11  kubectl get ns
+   12  vi ns.yaml 
+   13  ls
+   14  kubectl apply -f ns.yaml 
+   15  kubectl get ns
+   16  kubectl delete ns ajio-ns
+   17  kubectl get ns
+   18  kubectl delete ns meesho-ns
+   19  kubectl get ns
+   20  history
+      38  kubectl exec -it ipl-pod -n ipl-ns -- /bin/bash
+   39  ls
+   40  kubectl exec -it ipl-pod -c ipl -n ipl-ns -- /bin/bash
+   41  ls
+   42  vi pod.yaml 
+   43  kubectl apply -f pod.yaml 
+   44  cat pod.yaml 
+   45  vi pod.yaml 
+   46  ls
+   47  kubectl get pods -n ipl-ns
+   48  kubectl apply -f pod.yaml 
+   49  vi pod2.yaml
+   50  ls
+   51  cat pod2.yaml 
+   52  kubectl apply -f pod2.yaml 
+   53  vi pod2.yaml 
+   54  kubectl apply -f pod2.yaml 
+   55  kubectl get pods -n amazon-ns
+   56  kubectl describe pod ipl-pod -n amazon-ns
+   57  vi pod2.yaml 
+   58  kubectl apply -f pod2.yaml 
+   59  kubectl get pods -n amazon-ns
+   60  cat pod
+   61  cat pod2.yaml 
+   62  kubectl exec -it ipl-pod -c netflix -n amazon-ns -- /bin/bash
+   63  kubectl exec -it ipl-pod -c netflix -n amazon-ns -- /bin/sh
+   64  ls
+   65  history
