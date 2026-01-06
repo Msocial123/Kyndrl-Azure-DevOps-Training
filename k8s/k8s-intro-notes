@@ -1,0 +1,141 @@
+K8s
+
+09 September 2025
+21:58
+
+Wt is k8s?
+========
+
+	Ø It is a containerization management tool:- it k8s never create any container and it will manage only the container
+	Ø Also it’s a orchestration tool:- k8s has many resources or objects:- it requires one manager is called orchestration 
+	Ø It is an open source platform:- its completely free any one can use
+
+
+History of k8s
+===========
+
+	Ø K8s was created by google in 2013 in Go lng
+	Ø Initially k8s was not open source platform
+	Ø But in 2014 google has donated k8s to CNCF(cloud native computing foundation) and its continued as an open source platform.
+
+K8s:- is called cluster
+Cluster:- is combination of nodes
+Node:- is called vm
+
+Pod:- it is a smallest deployable unit it is nothing but where we are going to managing our container is called pod
+
+Features of k8s
+=============
+
+	1. Autoscaling:- k8s automatically scale up and scale down app resources as per the app demand:- Vertical AS:- It will crease cpu's, memory and storage, Horizontal AS:- It will increase servers.
+	2. Auto healing :- 10 pods :- 2 pods got deleted :- app down time:- k8s automatically will repair ur pods or will create new pods within fraction of ms for not getting any app down time.
+	3. Load balancing:- it is responsibility to distribute the users traffic between  the servers equally and k8s can manage load balancing of app very well.
+	4. Platform independent:- k8s can work on any infra or any cloud  or on-premises
+	5. Fault tolerance:- k8s will notify you if any node or pod fails
+	6. Rollback :- you can switch to previous version ,  3.1.2  --> 3.1.3
+	7. Health monitoring of containers:- k8s regularly will monitor containers health
+	8. Orchestration:- it will act as manager in k8s cluster to managing entire k8s resources or objects.
+
+
+Cluster
+======
+
+	Ø combination of nodes
+	Ø Node is nothing but vm
+	Ø Every cluster has two type nodes
+
+
+	1. Master node / control plane
+	2. Worker node
+
+
+	1. Master node
+  ==============
+
+
+	Ø It is going to managing entire ur cluster and its actual state
+	Ø Master node is heart of the cluster
+	Ø Master node is responsible to make available workers node ( without master node u cant get any worker node)
+	Ø Usually every cluster has one master and has multiple worker nodes
+	Ø Master node has 4 components
+
+
+	1. API server
+  ===========
+
+	Ø it is an entry point of cluster .
+	Ø Whenever you run the command first request will go to the api server only
+	Ø It will validate requests and updates cluster state .
+	Ø All communication between components goes through api server
+
+	2. Etcd
+  =======
+
+	Ø The entire cluster info or data is going to be stored in a etcd
+	Ø It is nothing but like database for cluster
+	Ø It will store ur data in the form  key-value-pair
+
+
+	3. Controller manager
+  ===================
+
+	Ø It is called as kube-controller-manager
+	Ø It will ensure ur cluster is always in desired state, 0 dp > 2 dp, 10 pods , 0 pods > 10 pods
+	Ø Node controller, replication controller, job controller, endpoints controller 
+	Ø Before creating any resource in cluster ur cluster will be in actual state from actual state to desired state , I hv desirted to create 5 pods , 5 dp .
+
+	4. Scheduler 
+  ===========
+
+	Ø 5 wn  >  50 pods  >  10 pods > 10*5=50
+	Ø It will schedule ur cluster tasks
+	Ø It will decide which node a pod should run on
+
+Worker node
+===========
+
+	Ø With the help of master node only we can create n.of wn 
+	Ø Where ur app workload is going to be deployed is called wn
+	Ø It will communicate with the master node
+	Ø Where the actual app's run 
+	Ø Wn also has 4 components 
+
+	1. Kubelet
+  =========
+
+	Ø It is an agent on every worker node
+	Ø It will communicate with api server
+	Ø It will create n manage ur pods in wn
+
+	2. Kube-proxy
+  ============
+
+	Ø It will contain entire cluster network info like node ip, pod ip , svc ip
+	Ø It will implement k8s svc concept
+	Ø It will maintain ip tables
+	Ø It will make communicate pod to svc
+
+3.pod 
+=====
+
+	Ø it is a smallest deployable unit it is nothing but where we are going to managing our container is called pod
+
+	4. Container runtime
+  ==================
+
+	Ø It will run container in k8s 
+	Ø K8s doesn't run container 
+
+
+Kubectl:- it is a command line interface tool how we are going to communicate with the cluster
+
+Kubectl as 
+
+
+How to create ns
+==============
+
+	Ø In a cluster whenever u want to create any resource u have follow two approaches 
+
+	1. Imperative style:- using commands is called imperative style
+Declarative style:- using yaml
