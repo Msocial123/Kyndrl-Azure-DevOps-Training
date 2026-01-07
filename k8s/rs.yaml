@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: ipl-container
-          image: muralisocial123/ipl:latest
+          image: muralisocial123/ipl:latest-v2
           ports:
             - containerPort: 3000

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ipl-deployment
+  namespace: ipl-ns
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: ipl
+  template:
+    metadata:
+      labels:
+        app: ipl
+    spec:
+      containers:
+        - name: ipl-container
+          image: muralisocial123/ipl:latest 
+          ports:
+            - containerPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ipl-deployment
+  namespace: ipl-ns
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: ipl
+  template:
+    metadata:
+      labels:
+        app: ipl
+    spec:
+      containers:
+        - name: ipl-container
+          image: muralisocial123/netflix-25.v1:latest 
+          ports:
+            - containerPort: 3000

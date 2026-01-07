@@ -42,3 +42,34 @@
    63  kubectl exec -it ipl-pod -c netflix -n amazon-ns -- /bin/sh
    64  ls
    65  history
+      14  kubectl get all -n ipl-ns
+   15  cat deployment.yaml 
+   16  vi deployment.yaml 
+   17  kubectl apply -f deployment.yaml 
+   18  kubectl get all -n ipl-ns
+   19  kubectl delete pods --all -n ipl-ns
+   20  kubectl get all -n ipl-ns
+   21  kubectl describe deployment ipl-deployment -n ipl-ns
+   22  kubectl get all -n ipl-ns
+   23  kubectl describe pod ipl-deployment-85776bd5d9-5bvgn -n ipl-ns
+   24  ls
+   25  vi deployment.yaml 
+   26  ls
+   27  cat deployment.yaml 
+   28  kubectl apply -f deployment.yaml 
+   29  vi deployment.yaml 
+   30  kubectl apply -f deployment.yaml 
+   31  > deployment.yaml 
+   32  vi deployment.yaml 
+   33  ls
+   34  kubectl apply -f deployment.yaml 
+   35  kubectl get all -n ipl-ns
+   36  kubectl describe deployment ipl-deployment -n ipl-ns
+   37  kubectl get all -n ipl-ns
+   38  kubectl describe pod ipl-deployment-5ccf45477f-f9z92 -n ipl-ns
+   39  kubectl rollout undo deployment ipl-deployment -n ipl-ns
+   40  kubectl get all -n ipl-ns
+   41  kubectl describe deployment ipl-deployment -n ipl-ns
+   42  kubectl get all -n ipl-ns
+   43  kubectl describe pod ipl-deployment-85776bd5d9-7vbmg -n ipl-ns
+   44  cat deployment.yaml
