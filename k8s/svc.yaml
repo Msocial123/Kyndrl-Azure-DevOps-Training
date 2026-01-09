@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ipl-service
+  namespace: ipl-ns
+spec:
+  selector:
+    app: ipl
+  ports:
+    - protocol: TCP
+      port: 3000         # Service Port
+      targetPort: 3000   # Container Port
+  type: ClusterIP
+
+---
+# svc type nodeport
+apiVersion: v1
+kind: Service
+metadata:
+  name: ipl-service
+  namespace: ipl-ns
+spec:
+  selector:
+    app: ipl
+  ports:
+    - protocol: TCP
+      port: 3000         # Service Port
+      targetPort: 3000   # Container Port
+      nodePort: 30080
+  type: NodePort
+
+---
+# svc type loadbalancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: ipl-service
+  namespace: ipl-ns
+spec:
+  selector:
+    app: ipl
+  ports:
+    - protocol: TCP
+      port: 3000         # Service Port
+      targetPort: 3000   # Container Port
+  type: LoadBalancer

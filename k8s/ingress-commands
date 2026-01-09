@@ -1,0 +1,31 @@
+   13  ls
+   14  cat svc.yaml 
+   15  ls
+   16  kubectl get all -n ipl-ns
+   17  cat deployment.yaml 
+   18  kubectl get all -n ipl-ns
+   19  ls
+   20  kubectl apply -f svc.yaml 
+   21  kubectl get svc -n ipl-ns
+   22  kubectl describe svc ipl-service -n ipl-ns
+   23  kubectl get all -n ipl-ns -o wide
+   24  kubectl delete pod ipl-deployment-8445fb7bd6-2d6rf -n ipl-ns
+   25  kubectl get all -n ipl-ns -o wide
+   26  vi svc.yaml 
+   27  ls
+   28  kubectl apply -f svc.yaml 
+   29  kubectl get all -n ipl-ns -o wide
+   30  kubectl get nodes -o wide
+   31  vi svc.yaml 
+   32  cat svc.yaml 
+   33  kubectl apply -f svc.yaml 
+   34  kubectl get all -n ipl-ns -o wide
+   35  vi ingress.yaml
+   36  ls
+   37  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml
+   38  kubectl get ns
+   39  ls
+   40  vi svc.yaml 
+   41  ls
+   42  kubectl apply -f ingress.yaml 
+   43  kubectl get ingress -n ipl-ns
