@@ -44,3 +44,14 @@ spec:
       port: 3000         # Service Port
       targetPort: 3000   # Container Port
   type: LoadBalancer
+
+---
+# svc type externalname
+apiVersion: v1
+kind: Service
+metadata:
+  name: ipl-service
+  namespace: ipl-ns
+spec:
+  type: ExternalName
+  externalName: flipakart.com  amazon.com  jio.com  ajio.com meesho.com 

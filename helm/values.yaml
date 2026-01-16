@@ -1,0 +1,37 @@
+namespace: murali-ns
+replicas: 5
+
+deployment:
+  labels:
+    app: ipl
+  containerName: ipl-container
+  containerPort: 3000
+
+netflix:
+  deploymentName: netflix-deployment
+  labels:
+    app: netflix
+  containerName: netflix-container
+  containerPort: 80 
+
+image:
+  repository: muralisocial123/ipl
+  tag: latest
+  repositoryNetflix: muralisocial123/netflix-25.v1
+  tagNetflix: latest
+
+service:
+  labels:
+    app: ipl
+  port: 3000
+  targetPort: 3000
+  type: LoadBalancer
+
+svc_netflix:
+  serviceName: netflix-service
+  labels:
+    app: netflix
+  port: 8081
+  targetPort: 80
+  type: LoadBalancer
+
