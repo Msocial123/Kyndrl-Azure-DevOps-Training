@@ -7,7 +7,8 @@ spec:
   selector:
     app: {{ .Values.deployment.labels.app}}
   ports:
-    - protocol: TCP
+    - name: http-ipl
+      protocol: TCP
       port: {{ .Values.service.port }}        # Service Port
       targetPort: {{ .Values.service.targetPort }}   # Container Port
   type: {{ .Values.service.type }}
