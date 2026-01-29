@@ -1,0 +1,28 @@
+# kuberntes Deployment manifest with:
+# - name: murali-ipl-deployment
+# - namespace: murali-ns
+# - 5 replicas
+# - labels for app: murali-ipl
+# - container name: murali-ipl-container
+# - image: muralisocial123/ipl:latest
+# - container port: 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: murali-ipl-deployment
+  namespace: murali-ns
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: murali-ipl
+  template:
+    metadata:
+      labels:
+        app: murali-ipl
+    spec:
+      containers:
+      - name: murali-ipl-container
+        image: muralisocial123/ipl:latest
+        ports:
+        - containerPort: 3000

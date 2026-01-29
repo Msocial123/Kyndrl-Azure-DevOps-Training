@@ -1,0 +1,37 @@
+Problems 
+========
+
+	Ø Writing code
+	Ø Scripts
+	Ø Yaml 
+	Ø Terraform
+	Ø Pipelines 
+	Ø Repetitive devops task
+
+
+Solution 
+=======
+
+	Ø Github copilot = AI pair programmer
+	Ø Github copilot is an ai-powered coding assistant that suggests code in real time inside your IDE
+Analogy:- copilot is like an experienced developer sitting next to you
+
+How GItHub copilot works
+=====================
+
+	Ø Built on openAI codex / gpt models
+	Ø Trained on public code repo
+	Ø Understands context from :- current file, comments and function names
+	Ø Provides:- inline code suggestions , chat-based coding help
+
+Key features 
+==========
+
+	Ø Code autocompletion
+	Ø Generate functions from comments 
+	Ø Write yaml /json/ terraform
+	Ø Explain existing code
+	Ø Unit test generation 
+	Ø Debugging assistance 
+
+

@@ -1,0 +1,22 @@
+# kubernetes Service manifest with:
+# - name: murali-ipl-service
+# - namespace: murali-ns
+# - labels for app: ipl
+# - port: 3000
+# - targetPort: 3000
+# - type: ClusterIP
+# - protocol: TCP
+apiVersion: v1
+kind: Service
+metadata:
+  name: murali-ipl-service
+  namespace: murali-ns
+  labels:
+    app: ipl
+spec:
+  selector:
+    app: ipl
+  ports:
+  - port: 3000
+    targetPort: 3000
+    protocol: TCP

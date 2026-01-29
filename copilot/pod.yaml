@@ -1,0 +1,32 @@
+# kubernetes pod yaml with muralisocial123/ipl image and port 3000
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ipl-pod
+spec:
+  containers:
+  - name: ipl-container
+    image: muralisocial123/ipl
+    ports:
+    - containerPort: 3000
+
+---
+
+# create a kubernetes Pod YAML file with:
+# - pod name: murali-ipl-pod
+# - container name: murali-ipl-container
+# - image: muralisocial123/ipl:latest
+# - container port: 3000
+# labels for app: ipl
+apiVersion: v1  
+kind: Pod
+metadata:
+  name: murali-ipl-pod
+  labels:
+    app: ipl
+spec:
+  containers:
+  - name: murali-ipl-container
+    image: muralisocial123/ipl:latest
+    ports:
+    - containerPort: 3000
