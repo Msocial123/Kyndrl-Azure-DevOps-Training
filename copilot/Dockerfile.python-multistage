@@ -1,0 +1,11 @@
+# Dockerfile for python application with multistage build
+FROM python:3.9-slim AS build
+WORKDIR /murali
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+FROM python:3.9-slim AS production
+WORKDIR /murali
+COPY --from=build /murali ./
+EXPOSE 5000
+CMD ["python", "app.py"]
