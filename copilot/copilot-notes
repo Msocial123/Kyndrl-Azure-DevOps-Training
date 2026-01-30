@@ -35,3 +35,12 @@ Key features
 	Ø Debugging assistance 
 
 
+	Ø We should have a src of the app
+	Ø Dockerfile - build image - create the container - access app on browser
+	Ø Compose file - build images - create containers - access the app
+	Ø Deployment.yaml - each svc 
+	Ø Svc.yaml 
+	Ø Ingress.yaml
+	Ø Helm chart
+	Ø Argocd yaml file
+Github actions or azure devops pipeline
